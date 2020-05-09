@@ -18,6 +18,6 @@ the repository for a sample docker image to run python code
 - check your image available at `https://hub.docker.com/repository/docker/<username>/docker-python`
 
 # Autobuild
-- Autobuild in docker will build an image with tag `latest` when there are new commits in master.
+- Autobuild in docker will build/update the image with tag `latest` when there are new commits in master.
 - `https://hub.docker.com/repository/docker/<username>/docker-python/builds`
 - See an example here: `https://hub.docker.com/repository/docker/mokarakaya/docker-python/builds`
