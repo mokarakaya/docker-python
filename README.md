@@ -16,3 +16,8 @@ the repository for a sample docker image to run python code
 - `docker run <username>/docker-python:0.1`
 - `docker push <username>/docker-python:0.1`
 - check your image available at `https://hub.docker.com/repository/docker/<username>/docker-python`
+
+# Autobuild
+- Autobuild in docker will build an image with tag `latest` when github repo is changed.
+- `https://hub.docker.com/repository/docker/<username>/docker-python/builds`
+- See an example here: `https://hub.docker.com/repository/docker/mokarakaya/docker-python/builds`
