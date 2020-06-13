@@ -1,23 +1,7 @@
 # docker-python
-the repository for a sample docker image to run python code
+This repository consists of two docker examples
 
+- [hub](/hub): Runs a basic python script, and explains how to push it to `hub.docker.com`
+- [compose-flask](/compose-flask): Configure a docker-compose file which has two services 
+interacting with each other as a client and server.
 
-
-# Steps
-
-## Login (if you have not)
-- create an access token in https://hub.docker.com/settings/security
-- `docker login --username <username>`
-- use access token as password
-
-# Build and push
-- `cd docker-python`
-- `docker build -t <username>/docker-python:0.1 .`
-- `docker run <username>/docker-python:0.1`
-- `docker push <username>/docker-python:0.1`
-- check your image available at `https://hub.docker.com/repository/docker/<username>/docker-python`
-
-# Autobuild
-- Autobuild in docker will build an image with tag `latest` when github repo is changed.
-- `https://hub.docker.com/repository/docker/<username>/docker-python/builds`
-- See an example here: `https://hub.docker.com/repository/docker/mokarakaya/docker-python/builds`

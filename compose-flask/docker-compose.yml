@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  flask-server:
+    build:
+      context: flask-server
+      dockerfile: Dockerfile
+    volumes:
+      - ./flask-server:/usr/src/app
+    ports:
+      - 5001:5000
+  flask-client:
+    build:
+      context: flask-client
+      dockerfile: Dockerfile
+    volumes:
+      - ./flask-client:/usr/src/app
+    ports:
+      - 5003:5002
+    depends_on:
+      - flask-server
