@@ -5,5 +5,5 @@
 
 # Steps
 
-- `docker-compose up`
+- `docker-compose up flask-client`
 - `curl http://localhost:5003/flaskclient`
